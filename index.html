@@ -1,1 +1,555 @@
-
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="杉本泰正（YASSAN）のポートフォリオ。パナソニックエナジーで製造技術に従事しながら、古物商（年商5億円規模）を運営。現場改善×会計思考×コミュニティ設計で「数字・仕組み・人」の三点同時最適を実現。ZEN大学でデータサイエンス・経済を学び、ZENCITY構想を推進中。">
+  <meta name="keywords" content="杉本泰正, YASSAN, 製造技術, 古物商, パナソニックエナジー, ZEN大学, ZENCITY, DX, 生成AI, 越境学習">
+  <meta name="author" content="杉本泰正 (YASSAN)">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yassan-portfolio.example.com/">
+  <meta property="og:title" content="杉本泰正（YASSAN）｜ポートフォリオ｜製造技術×会計思考×コミュニティ設計">
+  <meta property="og:description" content="製造技術職として現場改善・DXを推進しながら、年商5億円規模の古物商を運営。ZEN大学で学び、ZENCITYで「ありがとう」を生み出す経済構造を設計中。">
+  <meta property="og:image" content="/assets/ogp.png">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://yassan-portfolio.example.com/">
+  <meta name="twitter:title" content="杉本泰正（YASSAN）｜ポートフォリオ｜製造技術×会計思考×コミュニティ設計">
+  <meta name="twitter:description" content="製造技術職として現場改善・DXを推進しながら、年商5億円規模の古物商を運営。ZEN大学で学び、ZENCITYで「ありがとう」を生み出す経済構造を設計中。">
+  <meta name="twitter:image" content="/assets/ogp.png">
+  
+  <!-- Structured Data (Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "杉本泰正",
+    "alternateName": "YASSAN",
+    "birthDate": "1990-05-28",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "徳島県",
+      "addressCountry": "JP"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "パナソニックエナジー株式会社"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "ZEN大学"
+    },
+    "knowsAbout": ["製造技術", "データサイエンス", "会計", "DX", "生成AI", "コミュニティ設計"],
+    "sameAs": []
+  }
+  </script>
+  
+  <title>杉本泰正（YASSAN）｜ポートフォリオ｜製造技術×会計思考×コミュニティ設計</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- スキップリンク -->
+  <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+  
+  <!-- ヘッダー / ナビゲーション -->
+  <header class="header" role="banner">
+    <nav class="nav" role="navigation" aria-label="メインナビゲーション">
+      <div class="nav__container">
+        <div class="nav__brand">
+          <a href="#home" class="nav__logo">YASSAN</a>
+        </div>
+        
+        <button class="nav__toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__toggle-icon"></span>
+        </button>
+        
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="#home" class="nav__link">ホーム</a></li>
+          <li><a href="#profile" class="nav__link">基本情報</a></li>
+          <li><a href="#about" class="nav__link">自己紹介</a></li>
+          <li><a href="#timeline" class="nav__link">人生年表</a></li>
+          <li><a href="#work" class="nav__link">職業・事業</a></li>
+          <li><a href="#study" class="nav__link">学びと研究</a></li>
+          <li><a href="#values" class="nav__link">価値観・信条</a></li>
+          <li><a href="#vision" class="nav__link">ビジョン</a></li>
+          <li><a href="#summary" class="nav__link">まとめ</a></li>
+        </ul>
+        
+        <button class="theme-toggle" aria-label="テーマ切替" title="ライト/ダークモード切替">
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- メインコンテンツ -->
+  <main id="main-content">
+    
+    <!-- ヒーローセクション -->
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <blockquote class="hero__quote">
+            <p class="hero__quote-text">「人事を尽くし、運を天に任す」――状況や環境に左右される結果に一喜一憂するのではなく、今の自分にできることを確実にこなす姿勢を大切にしています。</p>
+          </blockquote>
+          
+          <h1 id="hero-heading" class="hero__name">
+            杉本 泰正<span class="hero__name-alt">（YASSAN）</span>
+          </h1>
+          
+          <p class="hero__title">製造技術×会計思考×コミュニティ設計</p>
+          <p class="hero__subtitle">「数字・仕組み・人」の三点同時最適</p>
+          
+          <div class="hero__actions">
+            <button class="btn btn--primary" onclick="window.print()" aria-label="このページを印刷">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+              </svg>
+              PDFで印刷
+            </button>
+            <a href="mailto:contact@example.com" class="btn btn--secondary" aria-label="メールで問い合わせ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              メールで連絡
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__background" aria-hidden="true"></div>
+    </section>
+    
+    <!-- 基本情報セクション -->
+    <section id="profile" class="profile section" aria-labelledby="profile-heading">
+      <div class="container">
+        <h2 id="profile-heading" class="section__title">基本情報</h2>
+        
+        <div class="profile__grid">
+          <div class="profile-card">
+            <div class="profile-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3 class="profile-card__label">氏名</h3>
+            <p class="profile-card__value">杉本 泰正（YASSAN）</p>
+          </div>
+          
+          <div class="profile-card">
+            <div class="profile-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3 class="profile-card__label">生年月日</h3>
+            <p class="profile-card__value"><time datetime="1990-05-28">1990年5月28日</time></p>
+          </div>
+          
+          <div class="profile-card">
+            <div class="profile-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="profile-card__label">居住</h3>
+            <p class="profile-card__value">徳島県</p>
+          </div>
+          
+          <div class="profile-card">
+            <div class="profile-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <h3 class="profile-card__label">主たる所属</h3>
+            <p class="profile-card__value">パナソニックエナジー株式会社<br><span class="profile-card__sub">（リチウムイオン電池・量産製造／製造技術）</span></p>
+          </div>
+          
+          <div class="profile-card">
+            <div class="profile-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <h3 class="profile-card__label">副業・事業</h3>
+            <p class="profile-card__value">古物商（高級時計・バッグ・貴金属のB2B卸）<br><span class="profile-card__sub">年商5億円規模</span></p>
+          </div>
+          
+          <div class="profile-card">
+            <div class="profile-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+            </div>
+            <h3 class="profile-card__label">学び</h3>
+            <p class="profile-card__value">ZEN大学 在学<br><span class="profile-card__sub">（データサイエンス・会計・経済・IT・現代社会などを専攻）</span></p>
+          </div>
+          
+          <div class="profile-card profile-card--wide">
+            <div class="profile-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="profile-card__label">強み</h3>
+            <p class="profile-card__value">現場改善×会計思考×コミュニティ設計<br><span class="profile-card__highlight">「数字・仕組み・人」の三点同時最適</span></p>
+          </div>
+          
+          <div class="profile-card profile-card--wide">
+            <div class="profile-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                <line x1="7" y1="7" x2="7.01" y2="7"></line>
+              </svg>
+            </div>
+            <h3 class="profile-card__label">キーワード</h3>
+            <div class="profile-card__tags">
+              <span class="tag">ZENCITY</span>
+              <span class="tag">ZEN CAFE&BAR</span>
+              <span class="tag">越境学習</span>
+              <span class="tag">生成AI活用</span>
+              <span class="tag">DX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 自己紹介セクション -->
+    <section id="about" class="about section section--alt" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading" class="section__title">自己紹介</h2>
+        
+        <div class="about__content">
+          <div class="about__text">
+            <p>私は、とても裕福とは言えないけれど、決して貧しくもない、いわゆる"普通"の家庭に生まれ育ちました。父はサラリーマン、母は専業主婦。幼い頃から野球に夢中で、勉強よりもチームプレーや努力の喜びを通じて多くを学びました。社会人になってからは、地元徳島の大企業に就職し、実業団ソフトボールチームに所属。国内トップリーグでプレーするほどのレベルで、仕事と練習に追われる日々を送りました。</p>
+            
+            <p>しかし「このままでいいのか？」という問いが心に浮かび、20代半ばで退職。飲食店を開業し、経営の厳しさとお客様との関係性の深さを学びました。その後、より豊かな生活を求めて保険営業の世界に転身。保険募集人の資格を取得し、営業成績も好調。しかし、夜の街での散財や詐欺被害を経験し、人間関係の難しさを痛感しました。</p>
+            
+            <p>この経験から、「人の行動を法や制度の側面から理解したい」と考え、徳島県警察本部で地方公務員（会計年度任用職員）として勤務。空いた時間には「六法全書」を読み込み、全国紙5紙と地方紙1紙を毎日読み続ける日々を送りました。知識が積み重なる喜びを実感し、YouTubeで書籍要約動画を見るようになったことをきっかけに、学びへの情熱が再燃。「学ぶことって、こんなに面白かったんだ！」と心から思いました。</p>
+            
+            <div class="about__expandable">
+              <div class="about__expandable-content" id="about-more">
+                <p>その後、製造技術職に転職。現在はパナソニックエナジーでリチウムイオン電池の量産製造に携わりながら、製造現場の改善・DX推進を担当しています。周囲には有名大学出身の優秀な同僚が多く、「自分はまだまだ知らないことだらけだ」と痛感。そこで通信制大学での学び直しを決意し、ZEN大学に入学しました。</p>
+                
+                <p>現在は、</p>
+                <ul class="about__list">
+                  <li>大企業での勤務</li>
+                  <li>友人と共同経営する古物商事業</li>
+                  <li>通信制大学での学び</li>
+                  <li>行政裁判・損害賠償訴訟の対応</li>
+                </ul>
+                <p>といった多岐にわたる活動を並行して行っています。忙しい日々ですが、挑戦できる今が何より楽しく、充実しています。最近では「自分の強みはもっと別のフィールドでも活かせるのでは？」という想いも強くなり、中小企業やスタートアップなど、変化の多い現場で価値を発揮することを目指しています。新しい出会いやご縁があれば、転職や移住なども前向きに考えています。</p>
+              </div>
+              
+              <button class="about__expand-btn" aria-expanded="false" aria-controls="about-more">
+                <span class="about__expand-text">続きを読む</span>
+                <svg class="about__expand-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 人生年表セクション -->
+    <section id="timeline" class="timeline section" aria-labelledby="timeline-heading">
+      <div class="container">
+        <h2 id="timeline-heading" class="section__title">人生年表</h2>
+        
+        <div class="timeline__track">
+          <div class="timeline__item" data-year="1990">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <time class="timeline__year" datetime="1990">1990</time>
+              <p class="timeline__event">徳島県に生まれる</p>
+            </div>
+          </div>
+          
+          <div class="timeline__item" data-year="1995">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <time class="timeline__year" datetime="1995">1995</time>
+              <p class="timeline__event">0歳から5歳まで東神戸で生活。阪神・淡路大震災にて被災</p>
+            </div>
+          </div>
+          
+          <div class="timeline__item" data-year="2009">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <time class="timeline__year" datetime="2009">2009</time>
+              <p class="timeline__event">高校卒業後、株式会社ジェイテクトに入社</p>
+            </div>
+          </div>
+          
+          <div class="timeline__item" data-year="2015">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <time class="timeline__year" datetime="2015">2015</time>
+              <p class="timeline__event">ガールズバー「MOS」開業（飲食業）</p>
+            </div>
+          </div>
+          
+          <div class="timeline__item" data-year="2017">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <time class="timeline__year" datetime="2017">2017</time>
+              <p class="timeline__event">保険代理店に転職、保険募集人資格取得</p>
+            </div>
+          </div>
+          
+          <div class="timeline__item" data-year="2019">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <time class="timeline__year" datetime="2019">2019</time>
+              <p class="timeline__event">徳島県警察本部で勤務（会計年度任用職員）</p>
+            </div>
+          </div>
+          
+          <div class="timeline__item" data-year="2022">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <time class="timeline__year" datetime="2022">2022</time>
+              <p class="timeline__event">パナソニックエナジー株式会社入社（製造技術）</p>
+            </div>
+          </div>
+          
+          <div class="timeline__item" data-year="2023">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <time class="timeline__year" datetime="2023">2023</time>
+              <p class="timeline__event">古物商事業を開始。高級時計・バッグ・貴金属のB2B卸を展開</p>
+            </div>
+          </div>
+          
+          <div class="timeline__item" data-year="2025">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <time class="timeline__year" datetime="2025">2025</time>
+              <p class="timeline__event">ZEN大学入学／ZENCITY（ZEN CAFE&BAR）立ち上げ準備を本格化</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 職業・事業セクション -->
+    <section id="work" class="work section section--alt" aria-labelledby="work-heading">
+      <div class="container">
+        <h2 id="work-heading" class="section__title">職業・事業の概要</h2>
+        
+        <div class="work__grid">
+          <div class="work-card">
+            <div class="work-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v20M2 12h20"></path>
+                <circle cx="12" cy="12" r="9"></circle>
+              </svg>
+            </div>
+            <h3 class="work-card__title">製造技術職（パナソニックエナジー）</h3>
+            <ul class="work-card__list">
+              <li>リチウムイオン電池の量産製造ラインにて、巻取工程・超音波溶接・異物対策を中心に担当。</li>
+              <li>現場の課題を可視化し、設備改善・条件設計・標準作業の最適化を推進。</li>
+              <li>現場改善とDX導入を両輪にした<strong>「仕組み化×再現性」</strong>の追求が得意。</li>
+            </ul>
+          </div>
+          
+          <div class="work-card">
+            <div class="work-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
+                <path d="M12 18V6"></path>
+              </svg>
+            </div>
+            <h3 class="work-card__title">古物商（副業）</h3>
+            <ul class="work-card__list">
+              <li>高級ブランド品・時計・貴金属を中心としたB2B卸を展開。</li>
+              <li><strong>年商約5億円</strong>。香港・シンガポール・ドバイなど海外バイヤーとの取引拡大を進行中。</li>
+              <li>受注発注型モデルを採用し、在庫リスクを最小化。Googleスプレッドシート×GASでオペレーションを自動化。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 学びと研究セクション -->
+    <section id="study" class="study section" aria-labelledby="study-heading">
+      <div class="container">
+        <h2 id="study-heading" class="section__title">学びと研究</h2>
+        
+        <div class="study__content">
+          <p class="study__intro">ZEN大学では、AI・データサイエンス・経済・会計・現代社会・倫理などを横断的に学習。<br>PREP法やピラミッドストラクチャー、イシューアナリシスを駆使して、学んだ内容を体系化。</p>
+          
+          <div class="study__highlight">
+            <p>特に<strong>「AI社会の歩き方」「幸福の資本論」「正義論」</strong>などの哲学・社会思想を、自身のビジネス・人生観に統合。</p>
+          </div>
+          
+          <div class="study__frameworks">
+            <h3 class="study__frameworks-title">使用フレームワーク・手法</h3>
+            <div class="study__tags">
+              <span class="tag tag--framework">PREP法</span>
+              <span class="tag tag--framework">ピラミッドストラクチャー</span>
+              <span class="tag tag--framework">イシューアナリシス</span>
+              <span class="tag tag--framework">AI・データサイエンス</span>
+              <span class="tag tag--framework">経済・会計</span>
+              <span class="tag tag--framework">倫理・哲学</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 価値観・信条セクション -->
+    <section id="values" class="values section section--alt" aria-labelledby="values-heading">
+      <div class="container">
+        <h2 id="values-heading" class="section__title">価値観・信条</h2>
+        
+        <div class="values__grid">
+          <div class="value-card">
+            <div class="value-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="value-card__title">三方良し</h3>
+            <p class="value-card__description">「売り手よし、買い手よし、世間よし」。すべての関係者が満足できる構造を目指す。短期的な利益ではなく、持続可能な信頼関係の構築を重視。</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <h3 class="value-card__title">感恩報謝</h3>
+            <p class="value-card__description">いま、ここに在ることへの感謝を忘れず、「ありがとう」を循環させる生き方を追求。どんな逆境でも、感謝の視点から学びに変える。</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="value-card__title">諸行無常</h3>
+            <p class="value-card__description">すべての物事は変化し続ける。成功にも失敗にも執着せず、変化を受け入れながら前に進む柔軟性を大切にしている。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 現在のビジョンセクション -->
+    <section id="vision" class="vision section" aria-labelledby="vision-heading">
+      <div class="container">
+        <h2 id="vision-heading" class="section__title">現在のビジョン</h2>
+        
+        <ul class="vision__list">
+          <li class="vision__item">
+            <span class="vision__badge vision__badge--active" aria-label="進行中">進行中</span>
+            <div class="vision__content">
+              <h3 class="vision__title">ZEN CAFE & BAR／ZENCITY構想</h3>
+              <p class="vision__description">学び・交流・実験をテーマにしたハイブリッド拠点の設立。</p>
+            </div>
+          </li>
+          
+          <li class="vision__item">
+            <span class="vision__badge vision__badge--active" aria-label="進行中">進行中</span>
+            <div class="vision__content">
+              <h3 class="vision__title">B2B古物商のDX化</h3>
+              <p class="vision__description">価格変動・在庫・取引管理を自動化し、海外販路の拡大を進行。</p>
+            </div>
+          </li>
+          
+          <li class="vision__item">
+            <span class="vision__badge vision__badge--active" aria-label="進行中">進行中</span>
+            <div class="vision__content">
+              <h3 class="vision__title">製造現場の改善×AI活用</h3>
+              <p class="vision__description">データ分析と生成AIを組み合わせ、判断スピードと精度を高める。</p>
+            </div>
+          </li>
+          
+          <li class="vision__item">
+            <span class="vision__badge vision__badge--mission" aria-label="ミッション">ミッション</span>
+            <div class="vision__content">
+              <h3 class="vision__title">「ありがとう」を生み出す経済構造を設計</h3>
+              <p class="vision__description">実業と教育の両面から、持続可能で感謝が循環する仕組みを構築する。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- まとめセクション -->
+    <section id="summary" class="summary section section--alt" aria-labelledby="summary-heading">
+      <div class="container">
+        <h2 id="summary-heading" class="section__title">まとめ</h2>
+        
+        <div class="summary__content">
+          <blockquote class="summary__quote">
+            <p class="summary__text">私の人生は、成功と失敗、挑戦と再出発の連続でした。どの場面にも共通していたのは、「とにかく一歩踏み出す」ことと、「人とのご縁を大切にする」こと。これからも、自分の経験と知識を活かし、誰かの挑戦を後押しできるような存在でありたいと思っています。</p>
+          </blockquote>
+          
+          <div class="summary__cta">
+            <p class="summary__cta-text">新しい出会いやご縁を、心よりお待ちしております。</p>
+            <a href="mailto:contact@example.com" class="btn btn--primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              お問い合わせ
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  
+  <!-- フッター -->
+  <footer id="contact" class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__content">
+        <p class="footer__text">新しいチャレンジや協業のご相談など、お気軽にご連絡ください。</p>
+        <p class="footer__copyright">&copy; <time datetime="2025">2025</time> 杉本泰正（YASSAN）All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
