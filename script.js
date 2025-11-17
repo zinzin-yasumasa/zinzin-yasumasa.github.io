@@ -210,7 +210,7 @@ const scrollAnimationManager = {
     if (prefersReducedMotion) return;
     
     const animatedElements = document.querySelectorAll(
-      '.profile-card, .work-card, .value-card, .vision__item, .timeline__item'
+      '.profile-card, .work-card, .value-card, .vision__item, .timeline__item, .book-card'
     );
     
     const observerOptions = {
