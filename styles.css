@@ -892,10 +892,10 @@ strong {
 }
 
 /* ========================================
-   Study Section
+   Study Section (Books)
    ======================================== */
 .study__content {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -903,37 +903,125 @@ strong {
   font-size: var(--font-size-lg);
   line-height: var(--line-height-loose);
   text-align: center;
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-2xl);
 }
 
-.study__highlight {
-  background: linear-gradient(135deg, rgba(90, 169, 230, 0.1), rgba(130, 224, 170, 0.1));
+/* Book Cards */
+.books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-3xl);
+}
+
+.book-card {
+  background: var(--card);
   padding: var(--space-lg);
   border-radius: var(--border-radius);
-  border-left: 4px solid var(--accent);
-  margin-bottom: var(--space-xl);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--brand);
+  transition: all var(--transition-speed) var(--transition-ease);
 }
 
-.study__highlight p {
-  margin: 0;
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-left-color: var(--accent);
+}
+
+.book-card__title {
   font-size: var(--font-size-lg);
-  line-height: var(--line-height-loose);
+  margin-bottom: var(--space-sm);
+  color: var(--text);
+  line-height: var(--line-height-normal);
 }
 
-.study__frameworks {
+.book-card__author {
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.book-card__description {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-loose);
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Philosophy Section */
+.study__philosophy {
+  background: linear-gradient(135deg, rgba(90, 169, 230, 0.1), rgba(130, 224, 170, 0.1));
+  padding: var(--space-2xl);
+  border-radius: var(--border-radius-lg);
+  border: 2px solid var(--border);
   text-align: center;
 }
 
-.study__frameworks-title {
-  font-size: var(--font-size-xl);
+.study__philosophy-title {
+  font-size: var(--font-size-2xl);
   margin-bottom: var(--space-md);
+  color: var(--text);
 }
 
-.study__tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-sm);
-  justify-content: center;
+.study__philosophy-concept {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--brand);
+  margin-bottom: var(--space-sm);
+  font-style: italic;
+}
+
+.study__philosophy-intro {
+  font-size: var(--font-size-lg);
+  color: var(--text);
+  margin-bottom: var(--space-lg);
+}
+
+.study__philosophy-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.study__philosophy-list li {
+  position: relative;
+  padding-left: var(--space-xl);
+  margin-bottom: var(--space-md);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-loose);
+  color: var(--text);
+}
+
+.study__philosophy-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+  font-size: var(--font-size-xl);
+}
+
+.study__philosophy-list li strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .books {
+    grid-template-columns: 1fr;
+  }
+  
+  .study__philosophy {
+    padding: var(--space-lg);
+  }
+  
+  .study__philosophy-list {
+    text-align: left;
+  }
 }
 
 /* ========================================
@@ -1074,18 +1162,12 @@ strong {
   margin: 0;
 }
 
-.summary__cta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-md);
-}
-
-.summary__cta-text {
+.summary__closing {
+  text-align: center;
   font-size: var(--font-size-xl);
   color: var(--text);
   font-weight: 600;
-  margin: 0;
+  margin: var(--space-xl) 0 0;
 }
 
 /* ========================================
